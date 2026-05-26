@@ -1,0 +1,28 @@
+.Form {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    flex-direction: column;
+}
+
+#button {
+    background-color: lightgray;
+}
+
+.Form input{
+    background: azure;
+    height: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.Form button{
+    margin-bottom: 10px;
+}
+
+h1{
+    text-align: center;
+}

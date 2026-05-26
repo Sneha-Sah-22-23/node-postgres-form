@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DETAILS FORM</h1>
+<div>
+    <form class="Form" action="http://localhost:3000/submit-data" method="POST" onsubmit="return validate_number()">
+        <input type="text" name="f_name" placeholder="First Name" required>
+        <input type="text" name="m_name" placeholder="Middle Name">
+        <input type="text" name="l_name" placeholder="Last Name" required> 
+        <input type="tel" name="c_num" id="c_num"
+        placeholder="Contact Number" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <button type="submit" id="button">Submit</button>
+    </form>
+</div>
+    <script>
+        function validate_number(){
+            const val = document.getElementById('c_num').value;
+            
+            if(isNaN(val) || val.length != 10){
+                alert("Enter a Valid Number");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+</body>
+</html>
